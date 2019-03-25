@@ -1,0 +1,24 @@
+{% extends 'blog/base.html' %}
+
+{%block content%}
+{% load static%}
+<div class='container'>
+
+        <h2 style="color: blueviolet;font-family: Verdana, Geneva, Tahoma, sans-serif">Using Google Maps!</h2>
+        <p style='font-size: 150%;color:rgb(105, 103, 103)'>Have you ever been to a new place and felt that you're lost? Don't worry! All you have to do is use google maps' global positioning system also known as GPS!
+        It will immediately locate where you are and show you a route map of the area you are in! You can also search for your destination and it will provide you with the directions! Once you open the app, follow these steps:</p>
+        <h4 style="color: blueviolet;font-family: Verdana, Geneva, Tahoma, sans-serif">Step 1:</h4>
+        <br><p style='font-size: 150%;color:rgb(105, 103, 103)'>It will show you your current location!</p>
+        <img src="{%static 'images/gmap1.jpg'%}" alt='chrome' style='border:5px solid blueviolet'>
+        <br>
+        <h4 style="color: blueviolet;font-family: Verdana, Geneva, Tahoma, sans-serif">Step 2:</h4>
+        <br><p style='font-size: 150%;color:rgb(105, 103, 103)'>Once it locates you, you get a route map of the are that you're in.</p>
+        <img src="{%static 'images/gmap2.jpg'%}" alt='search' style='border:5px solid blueviolet'>
+        <br>
+        <h4 style="color: blueviolet;font-family: Verdana, Geneva, Tahoma, sans-serif">Step 3:</h4>
+        <br><p style='font-size: 150%;color:rgb(105, 103, 103)'>To find the destination, on the search area type the destination and click on the blue directions button!</p>
+        <img src="{%static 'images/gmap3.jpg'%}" alt='search' style='border:5px solid blueviolet'>
+    
+</div>
+
+{% endblock %}

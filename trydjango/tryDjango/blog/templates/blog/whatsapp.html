@@ -1,0 +1,30 @@
+{% extends 'blog/base.html' %}
+
+{%block content%}
+{%load static%}
+<div class='container'>
+        <h2 style="color: blueviolet;font-family: Verdana, Geneva, Tahoma, sans-serif">Using WhatsApp messenger!</h2>
+        <p style='font-size: 150%;color:rgb(105, 103, 103)'>Using WhatsApp, you can send messages to your contacts on your phone for free!! 1000s of messages can be sent for absolutely no cost  at all!</p>
+        <h4 style="color: blueviolet;font-family: Verdana, Geneva, Tahoma, sans-serif">Step 1:</h4>
+        <br><p style='font-size: 150%;color:rgb(105, 103, 103)'>Find whatsapp on your phone and click it!</p>
+        <img src="{%static 'images/whatsapp1.jpg'%}" alt='chrome' style='border:5px solid blueviolet'>
+        <br>
+        <h4 style="color: blueviolet;font-family: Verdana, Geneva, Tahoma, sans-serif">Step 2:</h4>
+        <br><p style='font-size: 150%;color:rgb(105, 103, 103)'>These are the people who you are chatting with!</p>
+        <img src="{%static 'images/whatsapp2.jpg'%}" alt='search' style='border:5px solid blueviolet'>
+        <br>
+        <h4 style="color: blueviolet;font-family: Verdana, Geneva, Tahoma, sans-serif">Step 3:</h4>
+        <br><p style='font-size: 150%;color:rgb(105, 103, 103)'>Once you click on the person whom you want to chat with you have to type your message in the white space and click the send button!</p>
+        <img src="{%static 'images/whatsapp3.jpg'%}" alt='search' height="600px"style='border:5px solid blueviolet; size: 70%'>
+
+
+        <br><br><br>
+    <p style='font-size: 150%;color:rgb(105, 103, 103)'>Beware of fake forwards on WhatsApp! To spread fake news and rumors people send weird messages sometimes with even virus attatched to the web links in them!
+        Beware of such messages fron unkown people in group chats!
+Learn how to spot fake forwards by reading this artcile from the Electrons !! </p>
+<iframe src="https://electrons.co/find-whatsapp-message-forward-real-fake/" height="600px" width='800px'></iframe>
+    
+</div>
+
+
+{% endblock %}

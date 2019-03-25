@@ -1,0 +1,26 @@
+{% extends 'blog/base.html' %}
+
+{%block content%}
+{% load static%}
+<div class='container'>
+    <h2 style="color: blueviolet;font-family: Verdana, Geneva, Tahoma, sans-serif">Reading news online:</h2>
+    <p style='font-size: 150%;color:rgb(105, 103, 103)'>Reading online is one of the most easiest things to do! All you have to do is open Google Chrome and in the search bar type the name of either the incident you want to read about or the name of the newspaper that you want to read!</p>
+    <h4 style="color: blueviolet;font-family: Verdana, Geneva, Tahoma, sans-serif">Step 1:</h4>
+    <br><p style='font-size: 150%;color:rgb(105, 103, 103)'>Open Google Chrome!</p>
+    <img src="{%static 'images/news1.jpg'%}" alt='chrome' height="50%" style='border:5px solid blueviolet'>
+    <br>
+    <h4 style="color: blueviolet;font-family: Verdana, Geneva, Tahoma, sans-serif">Step 2:</h4>
+    <br><p style='font-size: 150%;color:rgb(105, 103, 103)'>Search for news!</p>
+    <img src="{%static 'images/news2.jpg'%}" alt='search' style='border:5px solid blueviolet'>
+    <br>
+    <h4 style="color: blueviolet;font-family: Verdana, Geneva, Tahoma, sans-serif">Step 3:</h4>
+    <br><p style='font-size: 150%;color:rgb(105, 103, 103)'>Click on the news that you want to read!</p>
+    <img src="{%static 'images/news3.jpg'%}" alt='search' style='border:5px solid blueviolet'>
+
+
+    <br><br><br>
+    <p style='font-size: 150%;color:rgb(105, 103, 103)'>We also have the latest headlines from the Times of India for you to read!</p>
+    <iframe src='https://timesofindia.indiatimes.com/home/headlines' height="600px" width='800px'></iframe><br><br>
+
+</div>
+{% endblock %}

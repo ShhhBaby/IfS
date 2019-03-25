@@ -1,0 +1,181 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<ul class='navbar'>
+  <li class="navbar_list"><a href="{%url 'gmaps'%}">Google Maps</a></li>
+  <li class="navbar_list"><a href="{%url 'shop'%}">Online Shopping</a></li>
+  <li class="navbar_list"><a href="{%url 'netbank'%}">Mobile wallets</a></li>
+  <li class="navbar_list"><a href="{%url 'news'%}">News</a></li>
+  <li class="navbar_list"><a href="{%url 'whatsapp'%}">Whatsapp</a></li>
+  <li class="navbar_list"><a href="{%url 'youtube'%}">Youtube</a></li>
+  <div class="logo">
+      <a href='http://127.0.0.1:8000/home/'>  <h1 style="color: blueviolet;font-family: Verdana, Geneva, Tahoma, sans-serif"> IfS</h1></a> 
+  </div>
+</ul>
+
+{% block content %}
+<br><br>
+<div class="container">
+<h2 style="color: blueviolet;font-family: Verdana, Geneva, Tahoma, sans-serif">Our Platform:</h2>
+
+<p style='font-size: 150%;color:rgb(105, 103, 103)'>
+    IfS is built from the ground up as a learning site for adults who are not experienced with the use of the latest technology on the internet. The platform comes with a dedicated page which consists of simple tutorials for each of the most useful internet technologies.
+</p>
+<img src=>
+<br><br><br>
+<h2 style="color: blueviolet;font-family: Verdana, Geneva, Tahoma, sans-serif">The main technologies that are used the most by senior citizens:</h2>
+<br>
+<p style='font-size: 150%;color:rgb(105, 103, 103)'>
+According to a survey analysis, senior citizens spend most of their time with YouTube as it provides a wide range of videos and is also very user friendly.
+There also seems to be a rise in the amount of senior citizens who want to be able to use social media effectively. We also have a dedicated page for major social media platforms like WhatAspp
+with information on how to use the application.<br><br>
+Some of the applications that we cover:
+</p>
+<br><br><br>
+
+
+
+<div class="gallery">
+    <a href="{%url 'youtube'%}">
+      <img src="{% static 'images/yt.jpg'%}" alt="YouTube" width="600" height="400">
+    </a>
+    <div class="desc">Youtube</div>
+  </div>
+  
+  <div class="gallery">
+      <a  href="{%url 'gmaps'%}">
+      <img src="{% static 'images/gmaps.jpg'%}" alt="Google Maps" width="600" height="400">
+    </a>
+    <div class="desc">Google Maps</div>
+  </div>
+  
+  <div class="gallery">
+      <a href="{%url 'whatsapp'%}">
+      <img src="{% static 'images/whatsapp.png'%}" alt="whatsapp" width="600" height="400">
+    </a>
+    <div class="desc">WhatsApp</div>
+  </div>
+  
+  <div class="gallery">
+      <a  href="{%url 'news'%}">
+      <img src="{% static 'images/news.jpg'%}" alt="news" width="600" height="400">
+    </a>
+    <div class="desc">Online News</div>
+  </div>
+
+  <div class="gallery">
+      <a href="{%url 'netbank'%}">
+      <img src="{% static 'images/netbank.jpg'%}" alt="Gnetbank" width="600" height="400">
+    </a>
+    <div class="desc">Mobile Wallet</div>
+  </div>
+
+  
+  <div class="gallery">
+      <a  href="{%url 'shop'%}">
+      <img src="{% static 'images/shop.jpg'%}" alt="ecommerce" width="600" height="400">
+    </a>
+    <div class="desc">Online Shopping</div>
+  </div>
+  
+  <br>
+
+</div>
+<br><br>
+<p style='font-size: 150%;color:rgb(105, 103, 103);text-align: center;'>Click on the image to start learning about that technology!</p>
+{% endblock %}
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+        .logo{
+          padding-top: -150px;
+        }
+        .navbar {
+          list-style-type: none;
+          margin: 0;
+          padding-right: 0;
+          padding-top: 0;
+          overflow: hidden;
+          background-color:white;
+          border: 1px solid white;
+          border-bottom-color: silver;
+          
+         
+          width: 100%;
+          height: 65px;
+        }
+        
+        .navbar_list {
+          float: right;
+          font-size: 17px;
+          font-family: Arial, Helvetica, sans-serif;
+        
+        }
+        
+        .navbar_list a{
+          display: block;
+          color: black;
+          text-align: center;
+          padding: 20px 12px;
+          text-decoration: none;
+        }
+        
+        .navbar_list a:hover {
+          
+          color:gray;
+        }
+
+        body{
+          background: linear-gradient(to bottom,white,white);
+          height:1000px;
+          font-family: Arial, Helvetica, sans-serif;
+          
+        }
+        .container{
+            text-align: center;
+        }
+        div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: left;
+}
+
+</style>
+</html>
